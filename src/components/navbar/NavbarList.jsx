@@ -1,7 +1,8 @@
 import React from "react";
 import NavbarItem from "./NavbarItem";
+// import NavbarButton from "./NavbarButton";
+import { Link } from "react-router-dom";
 import NavElems from "./NavElems";
-import "../../App.css";
 
 const NavbarList = () => {
   const navbarElem = NavElems.map((item) => {
@@ -9,7 +10,11 @@ const NavbarList = () => {
   });
   return (
     <div className="navbar">
+      <Link to="/" className="navbarTitle logo">
+        <h1 className="navbarName">Filmster</h1>
+      </Link>
       <ul className="NavbarList">{navbarElem}</ul>
+      {/* <NavbarButton handleClick={handleClick} /> */}
     </div>
   );
 };

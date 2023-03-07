@@ -15,9 +15,7 @@ const SearchBar = ({ handleSubmit }) => {
   return (
     <div className="SearchBar">
       <form className="SearchForm" onSubmit={onSubmit}>
-        <button type="submit" className="SearchForm-button">
-          <span className="SearchForm-button-label">Search</span>
-        </button>
+        <button className="SearchForm-button" type="submit"></button>
         <input
           onChange={handleChange}
           value={query}

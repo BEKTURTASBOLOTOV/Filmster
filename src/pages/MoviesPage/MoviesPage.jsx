@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import "../../App.css";
 import axios from "axios";
-import SearchBar from "../../components/Searchbar/SearchBar";
+import SearchBar from "../../components/SearchBar/SearchBar";
 import MovieList from "../../components/movies/MovieList";
+import "../../App.css";
 const MoviesPage = () => {
   const [query, setQuery] = useState("");
   const [films, setFilms] = useState([]);
